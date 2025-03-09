@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@keyframes neon-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(6, 78, 245, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 15px rgb(7, 50, 221), 0 0 20px rgba(46, 172, 52, 0.8);
+  }
+}
+
+.neon-text {
+  animation: neon-pulse 1s ease-in-out infinite;
+}
